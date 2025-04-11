@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenShop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    .nav-link {
+      position: relative;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #16a34a;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .btn-hover-effect {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-hover-effect:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body class="font-[Open Sans] text-gray-800">
+  <header class="flex justify-between items-center p-6 shadow-md">
+    <div class="flex items-center gap-2">
+      <img src="gambar/logo.png" alt="GreenShop Logo" class="w-10" />
+      <span class="font-bold text-lg text-green-600">GREENSHOP</span>
+    </div>
+    <nav class="hidden md:flex gap-6">
+      <a href="#" class="nav-link text-gray-800 font-bold">Home</a>
+      <a href="#" class="nav-link text-gray-800">Shop</a>
+      <a href="#" class="nav-link text-gray-800">Plant Care</a>
+      <a href="#" class="nav-link text-gray-800">Blogs</a>
+    </nav>
+    <div class="flex items-center gap-4">
+        <button class="text-gray-500 transform transition-transform duration-200 hover:scale-110 hover:text-green-600">
+          <i class="fas fa-search text-xl"></i></button>
+      <div class="relative">
+          <button class="text-gray-500 transform transition-transform duration-200 hover:scale-110 hover:text-green-600 relative">
+            <i class="fas fa-shopping-cart text-xl"></i>
+            <span class="absolute -top-2 -right-2 bg-green-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">6</span></button>
+        </div>
+      <button class="bg-green-600 text-white px-4 py-1 rounded flex items-center gap-2 transform transition-transform duration-200 hover:scale-105 hover:bg-green-500">
+          <i class="fas fa-sign-in-alt"></i>Login</button>
+      </div>
+        
+  </header>
+
+  <section class="bg-gray-100 py-10 px-6 md:px-20 flex flex-col md:flex-row items-center justify-between">
+    <div class="max-w-xl mb-10 md:mb-0">
+      <p class="uppercase text-sm text-gray-500 font-semibold tracking-wide mb-2">Welcome to Greenshop</p>
+        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+        LET’S MAKE A <br />BETTER <span class="text-green-600">PLANET</span>
+      </h2><p class="text-gray-600 mb-0">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+      <p class="text-gray-600 mb-6">Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+      <button class="bg-green-600 text-white px-6 py-2 rounded btn-hover-effect hover:bg-green-500">SHOP NOW</button>
+    </div>
+      <img src="gambar/gambar1.png" class="w-72 md:w-80" alt="gambar1">
+  </section>
+  
+  <div class="flex justify-start px-6 md:px-20 gap-6 mt-8 border-b">
+    <button class="border-b-2 border-green-600 pb-2 text-green-600 font-semibold btn-hover-effect">All Plants</button>
+    <button class="pb-2 text-gray-500 btn-hover-effect hover:text-green-600">New Arrivals</button>
+    <button class="pb-2 text-gray-500 btn-hover-effect hover:text-green-600">Sale</button>
+  </div>
+
+  <section class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 p-6 md:px-20">
+    <div class="btn-hover-effect">
+      <img src="gambar/produk1.png" alt="Barberton Daisy" class="mb-2 w-full max-w-[150px] mx-auto">
+      <p>Barberton Daisy</p>
+      <p class="text-green-600 font-bold">$119.00</p>
+    </div>
+    <div class="btn-hover-effect">
+      <img src="gambar/produk2.jpg" alt="Angel Wing Begonia" class="mb-2 w-full max-w-[150px] mx-auto">
+      <p>Angel Wing Begonia</p>
+      <p class="text-green-600 font-bold">$169.00</p>
+    </div>
+    <div class="btn-hover-effect">
+      <div class="relative">
+        <span class="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded">13% OFF</span>
+        <img src="gambar/produk3.png" alt="African Violet" class="mb-2 w-full max-w-[150px] mx-auto">
+      </div>
+      <p>African Violet</p>
+      <p class="text-green-600 font-bold">$199.00 <span class="line-through text-gray-400 ml-1">$229.00</span></p>
+    </div>
+    <div class="btn-hover-effect">
+      <img src="gambar/produk4.png" alt="Beach Spider Lily" class="mb-2 w-full max-w-[150px] mx-auto">
+      <p>Beach Spider Lily</p>
+      <p class="text-green-600 font-bold">$129.00</p>
+    </div>
+    <div class="btn-hover-effect">
+      <img src="gambar/produk5.png" alt="Blushing Bromeliad" class="mb-2 w-full max-w-[150px] mx-auto">
+      <p>Blushing Bromeliad</p>
+      <p class="text-green-600 font-bold">$139.00</p>
+    </div>
+    <div class="btn-hover-effect">
+      <img src="gambar/produk6.png" alt="Bird's Nest Fern" class="mb-2 w-full max-w-[150px] mx-auto">
+      <p>Bird's Nest Fern</p>
+      <p class="text-green-600 font-bold">$99.00</p>
+    </div>
+    <div class="btn-hover-effect">
+      <img src="gambar/produk7.jpg" alt="Broadleaf Lady Palm" class="mb-2 w-full max-w-[150px] mx-auto">
+      <p>Broadleaf Lady Palm</p>
+      <p class="text-green-600 font-bold">$59.00</p>
+    </div>
+    <div class="btn-hover-effect">
+      <img src="gambar/produk8.png" alt="Aluminum Plant" class="mb-2 w-full max-w-[150px] mx-auto">
+      <p>Aluminum Plant</p>
+      <p class="text-green-600 font-bold">$179.00</p>
+    </div>
+  </section>
+
+  <div class="flex justify-center gap-2 mt-4">
+    <button class="px-3 py-1 bg-green-600 text-white rounded btn-hover-effect hover:bg-green-500">1</button>
+    <button class="px-3 py-1 border btn-hover-effect hover:bg-green-100">2</button>
+    <button class="px-3 py-1 border btn-hover-effect hover:bg-green-100">3</button>
+    <button class="px-3 py-1 border btn-hover-effect hover:bg-green-100">4</button>
+  </div>
+
+  <section class="grid md:grid-cols-2 gap-6 px-6 md:px-20 mt-10">
+    <div class="bg-gray-100 p-6 rounded-md flex items-center justify-between btn-hover-effect">
+      <img src="gambar/produk9.png" class="w-44" />
+      <div>
+        <h3 class="font-semibold text-lg mb-2">SUMMER CACTUS & SUCCULENTS</h3>
+        <p class="text-gray-500 text-sm mb-4">We are an online plant shop offering a wide range of cheap and trendy plants</p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded btn-hover-effect hover:bg-green-500">Find More</button>
+      </div>
+    </div>
+    <div class="bg-gray-100 p-6 rounded-md flex items-center justify-between btn-hover-effect">
+      <img src="gambar/produk10.png" class="w-44" />
+      <div>
+        <h3 class="font-semibold text-lg mb-2">STYLING TRENDS & MUCH MORE</h3>
+        <p class="text-gray-500 text-sm mb-4">We are an online plant shop offering a wide range of cheap and trendy plants</p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded btn-hover-effect hover:bg-green-500">Find More</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-green-50 mt-10 p-6 text-sm">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 items-center text-center md:text-left">
+            <div class="flex justify-center md:justify-start items-center gap-2">
+        <img src="gambar/logo.png" alt="Logo" class="w-10" />
+        <span class="font-bold text-green-600 text-lg">GREENSHOP</span>
+      </div>
+        <div class="flex justify-center md:justify-start items-center gap-2">
+        <i class="fas fa-location-dot text-green-500"></i>
+        <span>70 West Buckingham Ave. Farmingdale, NY 11735</span>
+      </div>
+        <div class="flex justify-center md:justify-start items-center gap-2">
+        <i class="fas fa-envelope text-green-500"></i>
+        <span>contact@greenshop.com</span>
+      </div>
+        <div class="flex justify-center md:justify-start items-center gap-2">
+        <i class="fas fa-phone text-green-500"></i>
+        <span>+88 01911 717 490</span>
+      </div>
+    </div>
+      <p class="mt-4 text-center text-gray-400">&copy; 2025 GreenShop. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
